@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master of Times:Pomodoro</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/script.js" defer></script>
+  </head>
+<body>
+  <div class="container">
+    <h1> Pomodoro</h1>
+    <div class="main-content">
+      <div class="pomodoro-options">
+        <ul>
+          <li><button onclick="startTimer(25)" class="pomodoro">Pomodoro</button></li>
+          <li><button onclick="startTimer(5)" class="short-break">Short Break</button></li>
+          <li><button onclick="startTimer(15)" class="long-break">Long Break</button></li>
+        </ul>
+      </div>
+      <div class="timer">
+        <div id="time">25:00</div>
+        <div class="controls">
+          <button onclick="startTimer()" class="start">Start</button>
+          <button onclick="stopTimer()" class="stop">Stop</button>
+          <button onclick="resetTimer()" class="reset">Reset</button>
+        </div>
+      </div>
+    </div>
+    <div class="tasks">
+      <h2>Tasks</h2>
+      <input type="text" id="taskInput" class="add-task"  placeholder="Add task...">
+      <button onclick="addTask()" class="add-button">Add</button>
+      <ul id="taskList"></ul>
+    </div>
+  </div>
+</body>
+</html>
