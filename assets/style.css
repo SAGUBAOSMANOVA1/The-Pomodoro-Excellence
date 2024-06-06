@@ -147,3 +147,10 @@ button.reset {
 .add-button:hover {
   background-color: #228B22;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
